@@ -1,0 +1,8 @@
+// Supabaseクライアントの初期化
+// 環境変数からProject URLとAnon Keyを読み込む
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey)

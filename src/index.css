@@ -1,0 +1,20 @@
+/* グローバルスタイル：全画面共通のリセットとベース設定 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #1a202c;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* 入力フォームのデフォルトスタイルをリセット */
+input, button {
+  font-family: inherit;
+}
